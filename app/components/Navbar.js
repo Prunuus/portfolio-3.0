@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navButtonContainer}>
-          <a href="../pages/projects">
+          <a href="../projects">
             <button  className={styles.navButtons}> <p className={aoboshi.className}>Projects</p></button>
           </a>
           <a href="https://drive.google.com/uc?export=download&id=1mRb1x0fs_yRAm9OcFbNRTQRMkjk23L6B">

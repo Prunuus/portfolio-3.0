@@ -1,0 +1,11 @@
+.background {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 80px;
+}
+
+.projectsText {
+    font-size: 50;
+    color: black;
+}
