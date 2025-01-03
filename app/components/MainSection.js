@@ -61,6 +61,9 @@ const MainSection = () => {
       <div className={styles.sleepyCatContainer} >
         <div className={styles.sleepyCat}/> {/*img */}
       </div>
+      <div className={styles.randomCircle}>
+
+      </div>
     </section>
   )
 }
