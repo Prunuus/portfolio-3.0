@@ -1,4 +1,4 @@
-.navbarBackground {
+.navbar {
     background-color: #D9D9D9;
     max-width: 1920px;
     height: 101px;
@@ -10,17 +10,42 @@
 
 .text {
     color: black;
+    font-size: 24;
 }
 
-.buttonReset {
-    border: 0;
-    padding: 0;
+.navButtonContainer {
+    height: 100%;
+    width: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.navLogo {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .navButtons {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 35px;
+    border: none;
+    padding: 0;
+    background: none;
+    color: black;
+    font-size: 15;
+}
+
+.navImg {
+    width: 80px;
+    height: 100%;
+    background-image: url('../assets/myCat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
