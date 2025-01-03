@@ -1,5 +1,9 @@
 body {
     color: black;
+    font-family: "Aoboshi One", serif;
+  font-weight: 400;
+  font-style: normal;
+    
 }
 .background {
     background-color: white;
@@ -13,6 +17,9 @@ body {
 .details {
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sleepyCatContainer {
@@ -72,24 +79,23 @@ body {
 .typographyBackground {
     width: 100%;
     /* height: 120px; */
-    height: 30%;
+    /* height: 30%; */
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
-    padding-left: 80px;
-    margin-bottom: 20px;    
+    padding-left: 80px; 
 }
 
 .typewriter {
-    font-size: 90;
+    font-size: 75;
 }
 
 
 
 .bioBackground {
     width: 100%;
-    height: 40%;
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     font-size: 24;
@@ -99,7 +105,7 @@ body {
 
 .socialsBackground {
     width: 100%;
-    height: 10%;
+    /* height: 10%; */
     display: flex ;
     flex-direction: row;
     padding-left: 80px;
@@ -119,14 +125,79 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.randomCircle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 80% 20%;
-    background-color: #D9D9D9;
-    top: 70%;
-    left: 75%;
+
+
+@media screen and (max-width: 1500) {
+    .typographyBackground {
+        height: 20%;
+        margin: 0;
+    }
+    .typewriter {
+        font-size: 65;
+    }
+    .bioBackground {
+        height: 45%;
+        gap: 15px;
+        font-size: 20;
+    }
+
+
+    .sleepyCat {
+        background-size: 1000px;
+    }
+
+    
+}
+
+@media screen and (max-width: 900) {
+    .typographyBackground {
+        height: 15%;
+    }
+    .typewriter {
+        font-size: 50;
+    }
+    .socialsBackground {
+        align-items: center;
+    }
+    .bioBackground{
+        font-size: 18px;
+        height: 50%;
+    }
+    .sleepyCat {
+        background-size: 500px;
+    }
+    .catEarsBackground {
+        display: none;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575) {
+    .sleepyCatContainer {
+        width: 100%;
+        height: 25%;
+        margin-bottom: 10px;
+    }
+    .bioBackground {
+        height: 70%;
+    }
+
+    .details {
+        width: 100%;
+        gap: 15px;
+        justify-content: start;
+    }
+    .background {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }

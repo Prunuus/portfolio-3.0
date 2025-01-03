@@ -45,13 +45,13 @@ const MainSection = () => {
 
         <div className={styles.socialsBackground}>
           {/* links to socials or other things */}
-          <a> {/*LinkedIn*/} 
+          <a href='https://www.linkedin.com/in/kaikevinc/'> {/*LinkedIn*/} 
             <button className={styles.socialsButtons}><FaLinkedin /> </button>
           </a>
-          <a> {/*Github*/} 
+          <a href='https://github.com/Prunuus'> {/*Github*/} 
             <button className={styles.socialsButtons}><FaGithub /> </button>
           </a>
-          <a> {/*Insta*/} 
+          <a href='https://www.instagram.com/kev.lnc/'> {/*Insta*/} 
             <button className={styles.socialsButtons}><FaInstagram /> </button>
           </a>
         </div>
@@ -61,9 +61,7 @@ const MainSection = () => {
       <div className={styles.sleepyCatContainer} >
         <div className={styles.sleepyCat}/> {/*img */}
       </div>
-      <div className={styles.randomCircle}>
-
-      </div>
+     
     </section>
   )
 }

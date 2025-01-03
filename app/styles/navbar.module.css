@@ -1,7 +1,7 @@
 .navbar {
     background-color: #D9D9D9;
-    max-width: 1920px;
-    height: 101px;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,6 +38,7 @@
     background: none;
     color: black;
     font-size: 15;
+    cursor: pointer ;
 }
 
 .navImg {
@@ -48,4 +49,13 @@
     background-repeat: no-repeat;
     background-position: center;
 
+}
+
+@media screen and (max-width: 575) {
+    .navbar {
+        height: 80px;
+    }
+    .text {
+        font-size: 12;
+    }
 }
