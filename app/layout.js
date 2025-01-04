@@ -16,10 +16,19 @@ export const metadata = {
   description: "Learn more about more here on my portfolio!",
 };
 
+const styles = {
+  background: "white",
+  color: "black",
+  fontFamily: "Aoboshi One",
+  fontWeight: "400",
+  fontStyle: "normal",
+  overflowY: "scroll"
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{background:"white"}} className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body style={ styles} className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
