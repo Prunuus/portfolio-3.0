@@ -49,19 +49,19 @@ const MainSection = () => {
 
         <div className={styles.socialsBackground}>
           {/* links to socials or other things */}
-          <a href='https://www.linkedin.com/in/kaikevinc/'> {/*LinkedIn*/} 
+          <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/kaikevinc/'> {/*LinkedIn*/} 
             <button className={styles.socialsButtons}><FaLinkedin /> </button>
           </a>
-          <a href='https://github.com/Prunuus'> {/*Github*/} 
+          <a target="_blank" rel="noopener noreferrer" href='https://github.com/Prunuus'> {/*Github*/} 
             <button className={styles.socialsButtons}><FaGithub /> </button>
           </a>
-          <a href='https://www.instagram.com/kev.lnc/'> {/*Insta*/} 
+          <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/kev.lnc/'> {/*Insta*/} 
             <button className={styles.socialsButtons}><FaInstagram /> </button>
           </a>
           <a>
           <button className={styles.socialsButtons}><GiPreviousButton/> </button>
           </a>
-          <a href='https://portfolio2-jm71zkv75-prunuus-projects.vercel.app'><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
+          <a target="_blank" rel="noopener noreferrer" href='https://portfolio2-jm71zkv75-prunuus-projects.vercel.app'><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
         </div>
 
       </div>

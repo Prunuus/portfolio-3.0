@@ -15,7 +15,7 @@ const Navbar = () => {
       <section className={styles.navbar}>
 
         <div className={styles.navLogo}>
-          <p className={styles.text}>Kevin's Cardboard Box</p>
+          <a href='/'><p className={styles.text}>Kevin's Cardboard Box</p></a>
           <a style={{height: "100%", width : "50px"}} href='/'><div className={styles.navImg} ></div></a>
         </div>
 
