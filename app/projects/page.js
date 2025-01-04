@@ -1,7 +1,7 @@
 import Navbar from '@/app/components/Navbar'
 import React from 'react'
 import { Aoboshi_One } from "next/font/google";
-import Projects from '../components/Projects';
+import Projects from '@/app/components/Projects';
 
 
 

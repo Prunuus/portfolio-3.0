@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@styles/Navbar.module.css';  // Updated import
+import styles from '@styles/navbar.module.css';  // Updated import
 import { Aoboshi_One } from 'next/font/google';
 
 const aoboshi = Aoboshi_One({

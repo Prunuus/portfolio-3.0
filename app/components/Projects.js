@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/Projects.module.css';
+import styles from '@styles/projects.module.css';
 import Project from './ProjectCard'
 import { FaReact, FaNodeJs, FaGithub  } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
