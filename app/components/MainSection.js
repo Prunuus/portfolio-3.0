@@ -61,7 +61,7 @@ const MainSection = () => {
           <a>
           <button className={styles.socialsButtons}><GiPreviousButton/> </button>
           </a>
-          <a href=''><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
+          <a href='https://portfolio2-jm71zkv75-prunuus-projects.vercel.app'><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
         </div>
 
       </div>
