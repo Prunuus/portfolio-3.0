@@ -43,7 +43,7 @@ const MainSection = () => {
           </p>
             I am experienced in full stack web development but I’m still learning more. Im currently looking for Software Engineering Internships or any role that allows me to learn more about the field of computer science! 
           <p>
-            Some of my interests are cats, Pokemon, cooking, not using vim, and many more! Feel free to look around
+            Some of my interests are cats, Pokemon, cooking, not using vim, and many more! Feel free to look around. {`(I still love dogs too!)`}
           </p>
         </div>
 
