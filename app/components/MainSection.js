@@ -58,10 +58,10 @@ const MainSection = () => {
           <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/kev.lnc/'> {/*Insta*/} 
             <button className={styles.socialsButtons}><FaInstagram /> </button>
           </a>
-          <a>
+          <a target="_blank" rel="noopener noreferrer" href='https://portfolio2-ecru-three.vercel.app'>
           <button className={styles.socialsButtons}><GiPreviousButton/> </button>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href='https://portfolio2-ecru-three.vercel.app'><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
+          <a target="_blank" rel="noopener noreferrer" href='https://portfolio2-ecru-three.vercel.app'><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- previous website"}</p></a>
         </div>
 
       </div>
