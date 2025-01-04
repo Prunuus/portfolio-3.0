@@ -15,15 +15,15 @@ const Navbar = () => {
       <section className={styles.navbar}>
 
         <div className={styles.navLogo}>
-          <p className={styles.text}>Kevin's Space</p>
-          <a href='/'><div className={styles.navImg} ></div></a>
+          <p className={styles.text}>Kevin's Cardboard Box</p>
+          <a style={{height: "100%", width : "50px"}} href='/'><div className={styles.navImg} ></div></a>
         </div>
 
         <div className={styles.navButtonContainer}>
           <a href="../projects">
             <button  className={styles.navButtons}> <p className={aoboshi.className}>Projects</p></button>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1mRb1x0fs_yRAm9OcFbNRTQRMkjk23L6B">
+          <a href="https://drive.google.com/uc?export=download&id=1DSzLjvlgfwoXdTlbNRdGVsLSs6X-QKZt">
             <button className={styles.navButtons}><p className={aoboshi.className}>Resume</p></button>
           </a>
           {/* <a href="#">

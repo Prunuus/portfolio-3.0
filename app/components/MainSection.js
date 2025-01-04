@@ -3,6 +3,7 @@ import React from 'react'
 import styles from '../styles/mainSection.module.css'
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithub, FaInstagram  } from "react-icons/fa";
+import { GiPreviousButton } from "react-icons/gi";
 
 const MainSection = () => {
   return (
@@ -11,10 +12,13 @@ const MainSection = () => {
 
         <div className={styles.catEarsBackground}>
             {/* cat ears goes here */}
-            <div className={styles.catEarsLeft}/>
-            <div className={styles.catEarsRight}/>
+            <div className={styles.catEarsLeft}>
+              <div className={styles.catEarsLeftInner}></div>
+            </div>
+            <div className={styles.catEarsRight}> 
+              <div className={styles.catEarsRightInner}></div>
+            </div>
         </div>
-
         <div className={styles.typographyBackground}>
           {/* intro/typography goes here */}
           <ReactTyped
@@ -37,7 +41,7 @@ const MainSection = () => {
           <p>
             Im currently pursuing a B.S. in Computer Science at Texas A&M University alongside a minor in Mathematics.
           </p>
-            I am experienced in full stack web development but I’m still learning more. Im currently looking for Software Engineering Internships or any role that allows me to learn more about the field of computer science!
+            I am experienced in full stack web development but I’m still learning more. Im currently looking for Software Engineering Internships or any role that allows me to learn more about the field of computer science! 
           <p>
             Some of my interests are cats, Pokemon, cooking, not using vim, and many more! Feel free to look around
           </p>
@@ -54,6 +58,10 @@ const MainSection = () => {
           <a href='https://www.instagram.com/kev.lnc/'> {/*Insta*/} 
             <button className={styles.socialsButtons}><FaInstagram /> </button>
           </a>
+          <a>
+          <button className={styles.socialsButtons}><GiPreviousButton/> </button>
+          </a>
+          <a href=''><p style={{position:"relative",top:"5px" ,left:"-30px"}}>{"<--- secret"}</p></a>
         </div>
 
       </div>
@@ -63,6 +71,7 @@ const MainSection = () => {
       </div>
      
     </section>
+
   )
 }
 

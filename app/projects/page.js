@@ -12,7 +12,7 @@ const aoboshi = Aoboshi_One({
 
 export default function Home() {
   return (
-    <div className={aoboshi.className}>
+    <div  className={aoboshi.className}>
         <Navbar/>
         <Projects/>
     </div>

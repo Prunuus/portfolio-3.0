@@ -1,11 +1,36 @@
 .background {
     background-color: white;
     width: 100vw;
-    height: 100vh;
-    padding-left: 80px;
+    height: 100%;
+    padding: 30px 80px;
 }
 
 .projectsText {
     font-size: 50;
     color: black;
+    margin-bottom: -100px;
+}
+
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    height: 100%;
+    align-items: center;
+
+}
+
+@media screen and (max-width:550) {
+    body {
+        overflow-y: scroll;
+    }
+    .background{
+        padding-left: 0px;
+    }
+    .projectsText {
+        font-size: 25;
+    }
+    .projectsSection {
+        width: 100vw;
+    }
 }

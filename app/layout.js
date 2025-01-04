@@ -12,14 +12,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kevin's Space",
+  title: "Kevin's Cardboard Box",
   description: "Learn more about more here on my portfolio!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body style={{background:"white"}} className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
