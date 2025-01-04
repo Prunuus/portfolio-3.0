@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/ProjectCard.module.css'
+import styles from '@styles/ProjectCard.module.css';
 
 const ProjectCard = (props) => {
     // console.log(props.children)
