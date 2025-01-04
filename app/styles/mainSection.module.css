@@ -51,8 +51,8 @@
 }
 
 .catEarsLeft {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 80px solid transparent;
     /* border-bottom: 0px solid transparent; */
     border-left: 160px solid black;
@@ -60,20 +60,20 @@
     border-radius: 30% 20% 50% 30%; /* Adjust curvature */
 }
 .catEarsLeftInner {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 50px solid transparent;
     /* border-bottom: 0px solid transparent; */
     border-left: 90px solid #D9D9D9;
     position: absolute;
     border-radius: 30% 20% 50% 30%; /* Adjust curvature */
     top: -60px;
-    left: -150;
+    left: -150px;
 }
 
 .catEarsRight {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 80px solid transparent;
     /* border-bottom: 0px solid transparent; */
     border-right: 160px solid black;
@@ -81,15 +81,15 @@
     border-radius: 50% 50% 30% 90%; /* Adjust curvature */
 }
 .catEarsRightInner {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 50px solid transparent;
     /* border-bottom: 0px solid transparent; */
     border-right: 90px solid #D9D9D9;
     position: absolute;
     border-radius: 30% 20% 40% 30%; /* Adjust curvature */
     top: -60px;
-    right: -150;
+    right: -150px;
 }
 
 .typographyBackground {
@@ -104,7 +104,7 @@
 }
 
 .typewriter {
-    font-size: 75;
+    font-size: 75px;
 }
 
 
@@ -114,7 +114,7 @@
     /* height: 40%; */
     display: flex;
     flex-direction: column;
-    font-size: 24;
+    font-size: 24px;
     padding-left: 80px;
     gap:30px;
 }
@@ -130,11 +130,11 @@
 
 .socialsButtons {
     border: none;
-    padding: 0;
+    padding: 0px;
     background: none;
     color: black;
     background-color:#D9D9D9;
-    font-size: 25;
+    font-size: 25px;
     width: 35px;
     height: 35px;
     border-radius: 10px;
@@ -146,17 +146,17 @@
 
 
 
-@media screen and (max-width: 1500) {
+@media screen and (max-width: 1500px) {
     .typographyBackground {
         height: 20%;
-        margin: 0;
+        margin: 0px;
     }
     .typewriter {
-        font-size: 65;
+        font-size: 65px;
     }
     .bioBackground {
         gap: 15px;
-        font-size: 20;
+        font-size: 20px;
     }
 
 
@@ -167,12 +167,12 @@
     
 }
 
-@media screen and (max-width: 900) {
+@media screen and (max-width: 900px) {
     .typographyBackground {
         height: 15%;
     }
     .typewriter {
-        font-size: 50;
+        font-size: 50px;
     }
     .socialsBackground {
         align-items: center;
@@ -195,7 +195,7 @@
     }
 }
 
-@media screen and (max-width: 575) {
+@media screen and (max-width: 575px) {
 
     .sleepyCatContainer {
         width: 100%;

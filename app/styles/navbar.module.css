@@ -10,12 +10,12 @@
 
 .text {
     color: black;
-    font-size: 24;
+    font-size: 24px;
 }
 
 .navButtonContainer {
     height: 100%;
-    width: 300;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,10 +34,10 @@
 
 .navButtons {
     border: none;
-    padding: 0;
+    padding: 0px;
     background: none;
     color: black;
-    font-size: 15;
+    font-size: 15px;
     cursor: pointer ;
 }
 
@@ -51,11 +51,11 @@
 
 }
 
-@media screen and (max-width: 575) {
+@media screen and (max-width: 575px) {
     .navbar {
         height: 80px;
     }
     .text {
-        font-size: 12;
+        font-size: 12px;
     }
 }
