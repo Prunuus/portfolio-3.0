@@ -23,7 +23,7 @@ const Navbar = () => {
           <a href="../projects">
             <button  className={styles.navButtons}> <p className={aoboshi.className}>Projects</p></button>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1WEQPETvLV-wK1y4KIqCY7OfwTboYdG2d">
+          <a href="https://drive.google.com/uc?export=download&id=1ODnzMx5DgucuqnrJhMIcG8cCif15vA3L">
             <button className={styles.navButtons}><p className={aoboshi.className}>Resume</p></button>
           </a>
           {/* <a href="#">
