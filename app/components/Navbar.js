@@ -20,10 +20,10 @@ const Navbar = () => {
         </div>
 
         <div className={styles.navButtonContainer}>
-          <a href="../projects">
-            <button  className={styles.navButtons}> <p className={aoboshi.className}>Projects</p></button>
+          <a href="/updates">
+            <button  className={styles.navButtons}> <p className={aoboshi.className}>Updates</p></button>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1ODnzMx5DgucuqnrJhMIcG8cCif15vA3L">
+          <a href="https://drive.google.com/uc?export=download&id=1xLi_luVN4YjSvziiL4gmFMUtmNzOufsE">
             <button className={styles.navButtons}><p className={aoboshi.className}>Resume</p></button>
           </a>
           {/* <a href="#">

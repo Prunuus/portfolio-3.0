@@ -1,11 +1,12 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from '../styles/mainSection.module.css';
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithub, FaInstagram  } from "react-icons/fa";
 import { GiPreviousButton } from "react-icons/gi";
 
 const MainSection = () => {
+  const linuxRef = useRef(null);
   return (
     <section className={styles.background}>
       <div className={styles.details}>
@@ -39,12 +40,23 @@ const MainSection = () => {
         <div className={styles.bioBackground}>
           {/* short bio */}
           <p>
-            Im currently pursuing a B.S. in Computer Science at Texas A&M University alongside a minor in Mathematics.
+            Im currently pursuing a B.S. in Computer Science at Texas A&M University alongside a minor in Mathematics. {`(Class of 2027)`}
           </p>
-            I am experienced in full stack web development but I’m still learning more. Im currently looking for Software Engineering Internships or any role that allows me to learn more about the field of computer science! 
+          {/* <p>
+            I’ve interned as a Software Engineer at JPMorgan Chase, Halliburton, and Switchless, and as an AI Technical Advisor at Scale AI, but I’m still learning more. Im currently looking for new grad Software Engineering roles or any role that allows me to learn more about the field of computer science!
+          </p> */}
           <p>
-            Some of my interests are cats, Pokemon, cooking, not using vim, and many more! Feel free to look around. {`(I still love dogs too!)`}
+            Hmm maybe I have experience in AI/ML and Software Engineering.
           </p>
+          <p>
+            Some of my interests are cats (<button className={styles.linuxLink} onClick={() => linuxRef.current.showModal()}>my cat Linux</button>), Pokemon, cooking, making sourdough, typing at 150wpm, not using vim, and many more! Feel free to look around. {`(I still like other animals too)`}
+          </p>
+          {/* click anywhere (or Esc) to close */}
+          <dialog ref={linuxRef} className={styles.linuxDialog} onClick={() => linuxRef.current.close()}>
+            <figure className={styles.linuxCard}>
+              <img src="/assets/linux.jpeg" alt="My cat Linux" />
+            </figure>
+          </dialog>
         </div>
 
         <div className={styles.socialsBackground}>

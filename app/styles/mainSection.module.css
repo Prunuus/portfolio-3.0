@@ -221,3 +221,129 @@
     }
     
 }
+.linuxLink {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.linuxDialog {
+    margin: auto; /* globals.css zeroes margins, which un-centers <dialog> */
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.linuxDialog::backdrop {
+    background: rgba(217, 217, 217, 0.85);
+}
+
+.linuxCard {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.linuxCard img {
+    display: block;
+    max-width: min(80vw, 600px);
+    max-height: 65vh;
+    border-radius: 10px;
+}
+
+/* ---------- motion ---------- */
+
+.socialsButtons:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 0 black;
+}
+
+/* polaroid tilt on the Linux photo */
+.linuxCard {
+    transform: rotate(-1deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    /* homepage drops in piece by piece */
+    .catEarsBackground,
+    .typographyBackground,
+    .bioBackground,
+    .socialsBackground {
+        animation: floatIn 0.9s ease both;
+    }
+    .typographyBackground { animation-delay: 0.15s; }
+    .bioBackground { animation-delay: 0.3s; }
+    .socialsBackground { animation-delay: 0.45s; }
+
+    .socialsButtons {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* sleepy cat breathes */
+    .sleepyCat {
+        transform-origin: bottom center;
+        animation: breathe 6s ease-in-out infinite;
+    }
+
+    /* "my cat Linux" wiggles now and then so people find the popup */
+    .linuxLink {
+        animation: wiggle 3s ease-in-out 2s infinite;
+    }
+    .linuxLink:hover,
+    .linuxLink:focus-visible {
+        animation-play-state: paused;
+    }
+
+    .linuxDialog[open] .linuxCard {
+        animation: pop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+    .linuxDialog[open]::backdrop {
+        animation: fadeIn 0.2s ease both;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes wiggle {
+    0%, 84%, 100% { transform: rotate(0deg); }
+    88% { transform: rotate(-6deg); }
+    92% { transform: rotate(6deg); }
+    96% { transform: rotate(-3deg); }
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-4deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(-1deg);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

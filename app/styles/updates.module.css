@@ -1,0 +1,270 @@
+.page {
+    background-color: white;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 24px 80px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.yearNav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0 10px;
+}
+
+.yearNav a {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 6px 14px;
+}
+
+.yearNav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.year {
+    padding-top: 40px;
+}
+
+.yearHeading {
+    font-size: 32px;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+}
+
+/* the vertical timeline line, same grey as the project card divider */
+.timeline {
+    list-style: none;
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: #D9D9D9;
+}
+
+.entry {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cardHeader h3 {
+    font-size: 22px;
+}
+
+.kind {
+    display: inline-block;
+    font-size: 11px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-bottom: 6px;
+}
+
+.org {
+    font-size: 15px;
+    color: #555;
+}
+
+.date {
+    font-size: 13px;
+    color: #555;
+    white-space: nowrap;
+}
+
+.image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: top; /* screenshots: keep the site header in frame */
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+}
+
+.points {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+}
+
+.stack {
+    display: flex;
+    gap: 15px;
+}
+
+.skillGroup {
+    margin-bottom: 25px;
+}
+
+.skillGroup h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.chips {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chips li {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 30px;
+    }
+    .timeline {
+        padding-left: 36px;
+    }
+    .timeline::before {
+        left: 10px;
+        width: 4px;
+    }
+    .dot {
+        left: -36px;
+        width: 26px;
+        height: 26px;
+        font-size: 11px;
+    }
+    .card {
+        padding: 16px;
+    }
+    .cardHeader {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .cardHeader h3 {
+        font-size: 18px;
+    }
+    .points {
+        font-size: 13px;
+    }
+    .cardFooter {
+        font-size: 20px;
+    }
+}
+
+/* ---------- motion ---------- */
+
+/* dot fills in once its card has scrolled into view */
+.entry[data-reveal="shown"] .dot {
+    background-color: black;
+    color: white;
+}
+
+/* cardboard-cutout lift: hard black shadow instead of a soft blur */
+.card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0 black;
+}
+
+.yearNav a:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 0 black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .title,
+    .subtitle,
+    .yearNav {
+        animation: floatIn 0.9s ease both;
+    }
+    .subtitle { animation-delay: 0.15s; }
+    .yearNav { animation-delay: 0.3s; }
+
+    .entry[data-reveal="hidden"] {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    .entry[data-reveal="shown"] {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .dot {
+        transition: background-color 0.4s ease 0.3s, color 0.4s ease 0.3s;
+    }
+
+    .card,
+    .yearNav a {
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

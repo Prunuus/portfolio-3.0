@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "app/styles/mainSection.module.css"
+        ],
+        "createdAt": "2026-11-25T02:59:54.807Z",
+        "reason": "Claude decided: flagged lines are the pre-existing cat-ear shapes drawn with the CSS border-triangle trick, not accent borders"
+      }
+    ]
+  }
+}
